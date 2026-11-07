@@ -1,12 +1,10 @@
-# Python program to check if year is a leap year or not
+# This program adds two numbers
 
-year = 2000
+num1 = 1.5
+num2 = 6.3
 
-if (year % 400 == 0) and (year % 100 == 0):
-    print("{0} is a leap year".format(year))
+# Add two numbers
+sum = num1 + num2
 
-elif (year % 4 ==0) and (year % 100 != 0):
-    print("{0} is a leap year".format(year))
-
-else:
-    print("{0} is not a leap year".format(year))
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
