@@ -1,12 +1,12 @@
-#print
-print ("Hello World")
+# Python program to check if year is a leap year or not
 
-# Taking kilometers input from the user
-kilometers = float(input("Enter value in kilometers: "))
+year = 2000
 
-# conversion factor
-conv_fac = 0.621371
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
 
-# calculate miles
-miles = kilometers * conv_fac
-print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+
+else:
+    print("{0} is not a leap year".format(year))
